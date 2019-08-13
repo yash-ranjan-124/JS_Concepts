@@ -1,17 +1,29 @@
 {
-  "name": "parcel-sandbox",
+  "name": "jsconcepts",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
-  "main": "index.html",
+  "description": "**JS imp concepts",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec node index"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashasvi007/JS_Concepts.git"
+  },
+  "author": "yash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashasvi007/JS_Concepts/issues"
+  },
+  "homepage": "https://github.com/yashasvi007/JS_Concepts#readme",
   "dependencies": {
-    "symbol": "0.3.1"
-  },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "symbol": "^0.3.1"
   }
 }

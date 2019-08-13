@@ -1,4 +1,4 @@
-import Symbol from "symbol";
+const Symbol = require("symbol");
 
 let TestPrototypeInheritance = (function() {
   var privateOptions = Symbol("options");
