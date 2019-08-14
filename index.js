@@ -19,8 +19,20 @@ app.get("/", (req, res, next) => {
     next(err);
   }
 });
-app.get("/privateVarCreation", (req, res) => {
-  res.status(200).render("pvc");
+app.get("/privateVarCreation", (req, res, nxt) => {
+  try {
+    res.status(200).render("pvc");
+  } catch (err) {
+    nxt(err);
+  }
+});
+
+app.get("/privateVarCreationES6", (req, res, nxt) => {
+  try {
+    res.status(200).render("pvcES6");
+  } catch (error) {
+    nxt(error);
+  }
 });
 /******************************************************************* */
 console.log("Server Instantiated...!!");
