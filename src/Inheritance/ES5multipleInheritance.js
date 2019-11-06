@@ -42,9 +42,7 @@ var MinTest = (function() {
 })();
 
 var ProtoTest =
-  /*#__PURE__*/
   (function(_MainTest) {
-    // _inheritsLoose(ProtoTest, _MainTest);
     let classArr = [_MainTest, SecTest, MinTest];
     _multipleInherits(ProtoTest, classArr);
     function ProtoTest() {
