@@ -55,7 +55,7 @@ var ProtoTest =
       this.proto2 = "object";
     }
 
-    ProtoTest.getProto = function() {
+    ProtoTest.prototype.getProto = function() {
       return { ...this };
     };
 
@@ -63,4 +63,4 @@ var ProtoTest =
   })(MainTest);
 
 let pObj = new ProtoTest();
-console.log(pObj);
+console.log(pObj.getMain());//op:main
